@@ -28,10 +28,11 @@ export function Resultados() {
               La tabla de valores revela la evolución detallada de la
               temperatura en intervalos de tiempo específicos. La variación de
               los datos muestra una disminución gradual de la temperatura, desde
-              un valor inicial de 76.8 °C hasta alcanzar los 30.1 °C al final
-              del experimento. Esta información es crucial para comprender la
-              dinámica del proceso de enfriamiento y proporciona la INFORMACIÓN
-              necesaria para la derivación de la ecuación diferencial.
+              un valor inicial de 76.8 &deg;C hasta alcanzar los 30.1 &deg;C al
+              final del experimento. Esta información es crucial para comprender
+              la dinámica del proceso de enfriamiento y proporciona la
+              INFORMACIÓN necesaria para la derivación de la ecuación
+              diferencial.
               <br />
               <br />
               La pendiente de la recta tangente, calculada en diversos puntos de
@@ -56,9 +57,9 @@ export function Resultados() {
               Tendencia de Enfriamiento: La observación de la tabla de valores
               muestra una clara tendencia de enfriamiento a lo largo del tiempo.
               La temperatura de la gelatina líquida disminuye de manera
-              constante desde los 76.8 °C iniciales hasta los 30.1 °C al cabo de
-              100 minutos. Esto sugiere que el proceso de enfriamiento es
-              persistente y continuo.
+              constante desde los 76.8 &deg;C iniciales hasta los 30.1 &deg;C al
+              cabo de 100 minutos. Esto sugiere que el proceso de enfriamiento
+              es persistente y continuo.
               <br />
               <br />
               Pendiente de la Recta Tangente y Constante k: La pendiente de la
@@ -72,7 +73,7 @@ export function Resultados() {
               Significado de la Constante k: La constante k negativa sugiere que
               la gelatina líquida tiende a enfriarse con el tiempo, lo cual
               concuerda con el proceso de equilibrio térmico con el entorno. La
-              magnitud de ' indica la velocidad de este proceso, siendo en este
+              magnitud de indica la velocidad de este proceso, siendo en este
               caso -0.032, lo que significa que la gelatina se enfría a una tasa
               moderada.
             </p>
