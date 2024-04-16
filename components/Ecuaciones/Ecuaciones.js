@@ -58,7 +58,7 @@ const Ecuaciones = () => {
           <div>
             <h2 className="text-4xl font-bold mb-4">ANÁLISIS DE LA ECUACIÓN</h2>
             <p className="text-2xl">
-              La constante k, derivada de la ecuación diferencial, es esencial
+              La constante 'k', derivada de la ecuación diferencial, es esencial
               para entender la relación dinámica entre la temperatura de la
               gelatina líquida y el tiempo. Al ser negativa, indica una
               disminución constante en la temperatura a medida que el tiempo
