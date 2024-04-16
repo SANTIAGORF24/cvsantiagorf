@@ -9,11 +9,11 @@ const Ecuaciones = () => {
   return (
     <div className="w-4/6 mx-auto">
       <div className="text-center mb-8">
-        <h2 className="text-4xl font-bold mb-4">ECUACIÓN</h2>
+        <h2 className="text-4xl font-bold mb-4">ECUACION</h2>
       </div>
       <div className="flex justify-between">
         <div className="text-center">
-          <h2 className="text-2xl font-bold mb-4">ECUACIÓN DIFERENCIAL</h2>
+          <h2 className="text-2xl font-bold mb-4">ECUACION DIFERENCIAL</h2>
           <ol className="list-none p-0">
             <li className="mb-4">
               <strong>Ley de enfriamiento:</strong>
@@ -29,14 +29,14 @@ const Ecuaciones = () => {
               </p>
             </li>
             <li className="mb-4">
-              <strong>Condición Inicial:</strong>
+              <strong>Condicion Inicial:</strong>
               <BlockMath math=" 45.0 = ce^{k \cdot 0} + 20.3 " />
               <p>
                 Resolviendo para c, obtenemos:
                 <BlockMath math=" c = 25.6 " />
               </p>
               <p>
-                Por lo tanto, la solución es:
+                Por lo tanto, la solucion es:
                 <BlockMath math=" T(t) = 25.6e^{-0.032t} + 20.3 " />
               </p>
               <Modalecua />
@@ -56,26 +56,25 @@ const Ecuaciones = () => {
         </div>
         <div className="w-1/2">
           <div>
-            <h2 className="text-4xl font-bold mb-4">ANÁLISIS DE LA ECUACIÓN</h2>
+            <h2 className="text-4xl font-bold mb-4">ANALISIS DE LA ECUACION</h2>
             <p className="text-2xl">
-              La constante &apos;k&apos;, derivada de la ecuación diferencial,
-              es esencial para entender la relación dinámica entre la
-              temperatura de la gelatina líquida y el tiempo. Al ser negativa,
-              indica una disminución constante en la temperatura a medida que el
-              tiempo avanza. Este fenómeno puede interpretarse como una
-              característica del proceso de enfriamiento de la gelatina líquida
-              debido al contacto con el ambiente, donde la sustancia tiende a
-              equilibrarse térmicamente con su entorno a una velocidad
-              decreciente.
+              La constante k, derivada de la ecuación diferencial, es esencial
+              para entender la relación dinámica entre la temperatura de la
+              gelatina líquida y el tiempo. Al ser negativa, indica una
+              disminución constante en la temperatura a medida que el tiempo
+              avanza. Este fenomeno puede interpretarse como una característica
+              del proceso de enfriamiento de la gelatina líquida debido al
+              contacto con el ambiente, donde la sustancia tiende a equilibrarse
+              termicamente con su entorno a una velocidad decreciente.
             </p>
             <p className="text-2xl">
-              La magnitud de k, en este caso, -0.032, ofrece información
-              adicional. Una constante k más grande implicaría una tasa de
-              enfriamiento más rápida, mientras que un valor más pequeño
-              indicaría un enfriamiento más lento. En este contexto, el valor
-              negativo sugiere que la gelatina líquida tiende a enfriarse con el
+              La magnitud de k, en este caso, -0.032, ofrece informacion
+              adicional. Una constante k más grande implicaria una tasa de
+              enfriamiento más rapida, mientras que un valor mas pequeño
+              indicaria un enfriamiento más lento. En este contexto, el valor
+              negativo sugiere que la gelatina liquida tiende a enfriarse con el
               tiempo, lo cual se evidencia con las observaciones experimentales
-              de la disminución progresiva de la temperatura.
+              de la disminucion progresiva de la temperatura.
             </p>
           </div>
         </div>
