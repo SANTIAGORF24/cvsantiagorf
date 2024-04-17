@@ -8,47 +8,46 @@ import { Modalk } from "./Modalk";
 
 const Ecuaciones = () => {
   return (
-    <div className="w-4/6 mx-auto py-10">
+    <div className="w-full mx-auto py-10 px-4 sm:w-4/6">
       <div className="text-center mb-8">
         <h2 id="ecuaciones" className="text-4xl font-bold mb-4">
           ECUACION
         </h2>
       </div>
-      <div className="flex justify-between">
-        <div className="text-center">
+      <div className="flex justify-between flex-col sm:flex-row">
+        <div className="text-center mb-8 sm:mb-0">
           <h2 className="text-2xl font-bold mb-4">ECUACION DIFERENCIAL</h2>
           <div className=" items-center justify-center mb-4">
-            <BlockMath math=" \frac{dT}{dt} = k(T - T_m) " />
+            <BlockMath math="\\frac{dT}{dt} = k(T - T\_m)" />
             <Infobot />
           </div>
           <ol className="list-none p-0">
             <li className="mb-4">
               <strong>Ley de enfriamiento:</strong>
               <p>
-                Donde:
-                <BlockMath math="T_m = 20.3" />
+                Donde: <BlockMath math="T\_m = 20.3" />
               </p>
               <p>
-                Remplazamos:
-                <BlockMath math=" \frac{dT}{dt} = k(T - 20.3) " />
+                Remplazamos: <BlockMath math="\\frac{dT}{dt} = k(T - 20.3)" />
               </p>
               <p className="font-bold mb-4">Solucion a la ecuacion:</p>
-              <BlockMath math="\int \frac{dT}{T-20.3} = \int k dt" />
-              <BlockMath math="\ln|T-20.3| = kt + c" />
-              <BlockMath math="T-20.3 = e^{kt} \cdot e^c" />
+              <BlockMath math="\\int \\frac{dT}{T-20.3} = \\int k dt" />
+              <BlockMath math="\\ln|T-20.3| = kt + c" />
+              <BlockMath math="T-20.3 = e^{kt} \\cdot e^c" />
               <BlockMath math="T(t) = ce^{kt} + 20.3" />
-
               <p className="font-bold mb-4">
-                Ecuación temperatura respecto al tiempo T(t):
+                {" "}
+                Ecuación temperatura respecto al tiempo T(t):{" "}
               </p>
               <BlockMath math="T(t) = 25.6e^{-0.016t} + 20.3" />
             </li>
             <div className="flex flex-col space-y-5">
-              <Ecuabut /> <Modalk />
+              <Ecuabut />
+              <Modalk />
             </div>
           </ol>
         </div>
-        <div className="w-1/2">
+        <div className="w-full sm:w-1/2">
           <div>
             <h2 className="text-4xl font-bold mb-4">ANALISIS DE LA ECUACION</h2>
             <p className="text-2xl">
