@@ -14,7 +14,7 @@ export function Nav() {
     <Navbar shouldHideOnScroll className="">
       <NavbarBrand>
         <Image
-          src="/assets/img/Logo.jpg"
+          src="/assets/img/logo.jpg"
           className="w-100"
           width={120}
           height={120}
