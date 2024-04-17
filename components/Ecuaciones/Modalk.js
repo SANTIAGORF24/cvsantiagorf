@@ -10,13 +10,13 @@ import {
 } from "@nextui-org/react";
 import { BlockMath } from "react-katex";
 
-export function Ecuabut() {
+export function Modalk() {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
   return (
     <>
       <Button onPress={onOpen} className="bg-orange-500 text-white">
-        Constantes C
+        K
       </Button>
       <Modal
         backdrop="opaque"
@@ -30,12 +30,12 @@ export function Ecuabut() {
         <ModalContent>
           {(onClose) => (
             <>
-              <ModalHeader className="flex flex-col gap-1">
-                Constantes C
-              </ModalHeader>
+              <ModalHeader className="flex flex-col gap-1">K</ModalHeader>
               <ModalBody>
-                <BlockMath math="45.9 = ce^{(k \cdot 0)} + 20.3" />
-                <BlockMath math="c = 25.6" />
+                <BlockMath math="36.1 = 25.6e^{(k \cdot 30)} + 20.3" />
+                <BlockMath math="\frac{15.8}{25.6} = e^{(k \cdot 30)}" />
+                <BlockMath math="\left(\ln{\left|\frac{15.8}{25.6}\right|}\right)/30 = k" />
+                <BlockMath math="k = -0.016" />
               </ModalBody>
               <ModalFooter>
                 <Button color="danger" variant="light" onPress={onClose}>

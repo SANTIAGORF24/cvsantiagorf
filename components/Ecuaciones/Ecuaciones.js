@@ -1,9 +1,10 @@
 import React from "react";
 import "katex/dist/katex.min.css";
 import { BlockMath } from "react-katex";
-import { Modalecua } from "./Modalecu";
 import { Infobot } from "./Infobot";
 import { Ecuabut } from "./Ecuabut";
+import { Modalecu } from "./Modalecu";
+import { Modalk } from "./Modalk";
 
 const Ecuaciones = () => {
   return (
@@ -14,44 +15,30 @@ const Ecuaciones = () => {
       <div className="flex justify-between">
         <div className="text-center">
           <h2 className="text-2xl font-bold mb-4">ECUACION DIFERENCIAL</h2>
+          <div className=" items-center justify-center mb-4">
+            <BlockMath math=" \frac{dT}{dt} = k(T - T_m) " />
+            <Infobot />
+          </div>
           <ol className="list-none p-0">
             <li className="mb-4">
               <strong>Ley de enfriamiento:</strong>
-              <BlockMath math=" \frac{dT}{dt} = k(T - T_m) " />
               <p>
                 Donde:
                 <BlockMath math="T_m = 20.3" />
               </p>
               <p>
-                La solución a esta ecuación diferencial es:
-                <BlockMath math=" T - 20.3 = ce^{kt} " />
-                <BlockMath math=" T(t) = ce^{kt} + 20.3 " />
+                Remplazamos:
+                <BlockMath math=" \frac{dT}{dt} = k(T - 20.3) " />
               </p>
+              <p className="font-bold mb-4">Solucion a la ecuacion:</p>
+              <BlockMath math="\int \frac{dT}{T-20.3} = \int k dt" />
+              <BlockMath math="\ln|T-20.3| = kt + c" />
+              <BlockMath math="T-20.3 = e^{kt} \cdot e^c" />
+              <BlockMath math="T(t) = ce^{kt} + 20.3" />
             </li>
-            <li className="mb-4">
-              <strong>Condicion Inicial:</strong>
-              <BlockMath math=" 45.0 = ce^{k \cdot 0} + 20.3 " />
-              <p>
-                Resolviendo para c, obtenemos:
-                <BlockMath math=" c = 25.6 " />
-              </p>
-              <p>
-                Por lo tanto, la solucion es:
-                <BlockMath math=" T(t) = 25.6e^{-0.032t} + 20.3 " />
-              </p>
-              <Modalecua />
-              <Infobot />
-              <Ecuabut />
-            </li>
-            <li>
-              <strong>Hallar K:</strong>
-              <BlockMath math=" 36.1 = 25.6e^{k \cdot 15} + 20.3 " />
-              <p>
-                Para encontrar k, despejamos y aplicamos logaritmos naturales:
-                <BlockMath math=" \frac{\ln|\frac{15.8}{25.6}|}{15} = k " />
-                <BlockMath math=" k = -0.032 " />
-              </p>
-            </li>
+            <div className="flex flex-col space-y-5">
+              <Ecuabut /> <Modalecu /> <Modalk />
+            </div>
           </ol>
         </div>
         <div className="w-1/2">
@@ -79,6 +66,7 @@ const Ecuaciones = () => {
           </div>
         </div>
       </div>
+      <div className="text-center mt-8"></div>
     </div>
   );
 };

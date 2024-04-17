@@ -1,25 +1,50 @@
 import React from "react";
 import {
-  Dropdown,
-  DropdownTrigger,
-  DropdownMenu,
-  DropdownItem,
+  Modal,
+  ModalContent,
+  ModalHeader,
+  ModalBody,
+  ModalFooter,
   Button,
+  useDisclosure,
 } from "@nextui-org/react";
+import { BlockMath } from "react-katex";
 
-export function Modalecua() {
+export function Modalecu() {
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
+
   return (
-    <Dropdown>
-      <DropdownTrigger>
-        <Button variant="bordered" className="bg-orange-500 text-white">
-          Datos iniciales
-        </Button>
-      </DropdownTrigger>
-      <DropdownMenu aria-label="Static Actions">
-        <DropdownItem>T(0) = 45.9°</DropdownItem>
-        <DropdownItem>T(15) = 36.1°</DropdownItem>
-        <DropdownItem>Tm = 20.3°</DropdownItem>
-      </DropdownMenu>
-    </Dropdown>
+    <>
+      <Button onPress={onOpen} className="bg-orange-500 text-white">
+        Ecuación temperatura respecto al tiempo T(t)
+      </Button>
+      <Modal
+        backdrop="opaque"
+        isOpen={isOpen}
+        onOpenChange={onOpenChange}
+        classNames={{
+          backdrop:
+            "bg-gradient-to-t from-zinc-900 to-zinc-900/10 backdrop-opacity-20",
+        }}
+      >
+        <ModalContent>
+          {(onClose) => (
+            <>
+              <ModalHeader className="flex flex-col gap-1">
+                Ecuación temperatura respecto al tiempo T(t).
+              </ModalHeader>
+              <ModalBody>
+                <BlockMath math="T(t) = 25.6e^{-0.016t} + 20.3" />
+              </ModalBody>
+              <ModalFooter>
+                <Button color="danger" variant="light" onPress={onClose}>
+                  Salir
+                </Button>
+              </ModalFooter>
+            </>
+          )}
+        </ModalContent>
+      </Modal>
+    </>
   );
 }
