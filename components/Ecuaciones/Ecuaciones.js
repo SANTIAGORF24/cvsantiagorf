@@ -53,6 +53,8 @@ const Ecuaciones = () => {
               del proceso de enfriamiento de la gelatina líquida debido al
               contacto con el ambiente, donde la sustancia tiende a equilibrarse
               termicamente con su entorno a una velocidad decreciente.
+              <br />
+              <br />
             </p>
             <p className="text-2xl">
               La magnitud de k, en este caso, -0.032, ofrece informacion
