@@ -132,7 +132,7 @@ const TemperatureGraph = () => {
   };
 
   return (
-    <div className="flex justify-center w-full py-20">
+    <div id="grafica" className="flex justify-center w-full py-20">
       <div className="w-4/5">
         <Line data={data} options={options} />
       </div>

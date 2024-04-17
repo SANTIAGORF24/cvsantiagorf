@@ -4,7 +4,7 @@ import { Tableone } from "./Tableone";
 export function Tableg() {
   return (
     <div className="flex justify-center items-center flex-col h-full py-20 ">
-      <h1 className="text-4xl mb-8 font-bold text-orange-500">
+      <h1 id="problema" className="text-4xl mb-8 font-bold text-orange-500">
         PROBLEMA DE ENFRIAMIENTO
       </h1>
       <div className="w-4/6 text-center mb-8">

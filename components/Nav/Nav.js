@@ -24,28 +24,30 @@ export function Nav() {
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
-          <Link href="#" className="text-orange-500">
+          <Link href="#inicio" className="text-orange-500">
             Inicio
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="#" className="text-orange-500">
+          <Link href="#problema" className="text-orange-500">
             Tablas
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="#" className="text-orange-500">
+          <Link href="#grafica" className="text-orange-500">
             Grafica
           </Link>
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
-        <NavbarItem className="hidden lg:flex">
-          <Link href="#">Login</Link>
+        <NavbarItem className="hidden lg:flex ">
+          <Link href="#ecuaciones" className="text-orange-500">
+            Ecuaciones
+          </Link>
         </NavbarItem>
         <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat">
-            Sign Up
+          <Button as={Link} color="warning" href="#resultados" variant="flat">
+            Resultados
           </Button>
         </NavbarItem>
       </NavbarContent>

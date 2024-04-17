@@ -7,7 +7,7 @@ export function Banner() {
     <>
       <div className="flex justify-center items-center">
         <div className="flex bg-white justify-center items-center w-4/5 space-x-20 py-20">
-          <div>
+          <div id="inicio">
             <Image
               width={400}
               height={200}

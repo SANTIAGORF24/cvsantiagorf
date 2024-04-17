@@ -10,7 +10,9 @@ const Ecuaciones = () => {
   return (
     <div className="w-4/6 mx-auto py-10">
       <div className="text-center mb-8">
-        <h2 className="text-4xl font-bold mb-4">ECUACION</h2>
+        <h2 id="ecuaciones" className="text-4xl font-bold mb-4">
+          ECUACION
+        </h2>
       </div>
       <div className="flex justify-between">
         <div className="text-center">

@@ -4,7 +4,9 @@ import { Accordion, AccordionItem } from "@nextui-org/react";
 export function Resultados() {
   return (
     <div className="w-4/6 mx-auto py-20">
-      <h2 className="text-3xl font-bold mb-4 text-center">RESULTADOS</h2>
+      <h2 id="resultados" className="text-3xl font-bold mb-4 text-center">
+        RESULTADOS
+      </h2>
       <Accordion>
         <AccordionItem
           key="1"
