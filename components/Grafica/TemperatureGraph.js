@@ -20,29 +20,29 @@ ChartJS.register(
 );
 
 const TemperatureGraph = () => {
-  // Puntos para la tangente
+  // Puntos para la nueva recta tangente
   const tangentPoints = [
-    [0, 57.1],
-    [5, 55.5],
-    [10, 53.9],
-    [15, 52.3],
-    [20, 50.7],
-    [25, 49.1],
-    [30, 47.5],
+    [0, 59.9],
+    [5, 57.9],
+    [10, 55.9],
+    [15, 53.9],
+    [20, 51.9],
+    [25, 49.9],
+    [30, 47.9],
     [35, 45.9],
-    [40, 44.3],
-    [45, 42.7],
-    [50, 41.1],
-    [55, 39.5],
-    [60, 37.9],
-    [65, 36.3],
-    [70, 34.7],
-    [75, 33.1],
-    [80, 31.5],
-    [85, 29.9],
-    [90, 28.3],
-    [95, 26.7],
-    [100, 25.1],
+    [40, 43.9],
+    [45, 41.9],
+    [50, 39.9],
+    [55, 37.9],
+    [60, 35.9],
+    [65, 33.9],
+    [70, 31.9],
+    [75, 29.9],
+    [80, 27.9],
+    [85, 25.9],
+    [90, 23.9],
+    [95, 21.9],
+    [100, 19.9],
   ];
 
   // Calcular la pendiente m
@@ -53,7 +53,7 @@ const TemperatureGraph = () => {
   // Calcular la intersección b
   const b = tangentPoints[0][1] - m * tangentPoints[0][0];
 
-  // Generar los puntos para la tangente
+  // Generar los puntos para la nueva tangente
   const tangentData = tangentPoints.map((point) => ({
     x: point[0],
     y: m * point[0] + b,
@@ -95,7 +95,7 @@ const TemperatureGraph = () => {
         tension: 0.1,
       },
       {
-        label: "Tangente",
+        label: "Nueva Tangente",
         data: tangentData,
         borderColor: "rgb(54, 162, 235)",
         backgroundColor: "rgba(54, 162, 235, 0.5)",
