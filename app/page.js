@@ -9,6 +9,7 @@ import TemperatureGraph from "@/components/Grafica/TemperatureGraph";
 import { Ecuaciones } from "@/components/Ecuaciones/Ecuaciones";
 import { Resultados } from "@/components/Resultados/Resultados";
 import { Sliderpreguntas } from "@/components/Slider/Sliderpreguntas";
+import Footer from "@/components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <Ecuaciones />
       <Sliderpreguntas />
       <Resultados />
+      <Footer />
     </>
   );
 }
