@@ -16,7 +16,7 @@ export function Modalk() {
   return (
     <>
       <Button onPress={onOpen} className="bg-orange-500 text-white">
-        K
+        Constante k
       </Button>
       <Modal
         backdrop="opaque"
@@ -30,7 +30,9 @@ export function Modalk() {
         <ModalContent>
           {(onClose) => (
             <>
-              <ModalHeader className="flex flex-col gap-1">K</ModalHeader>
+              <ModalHeader className="flex flex-col gap-1">
+                Constante C
+              </ModalHeader>
               <ModalBody>
                 <BlockMath math="36.1 = 25.6e^{(k \cdot 30)} + 20.3" />
                 <BlockMath math="\frac{15.8}{25.6} = e^{(k \cdot 30)}" />

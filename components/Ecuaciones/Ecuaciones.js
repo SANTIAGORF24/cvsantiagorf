@@ -35,9 +35,14 @@ const Ecuaciones = () => {
               <BlockMath math="\ln|T-20.3| = kt + c" />
               <BlockMath math="T-20.3 = e^{kt} \cdot e^c" />
               <BlockMath math="T(t) = ce^{kt} + 20.3" />
+
+              <p className="font-bold mb-4">
+                Ecuación temperatura respecto al tiempo T(t):
+              </p>
+              <BlockMath math="T(t) = 25.6e^{-0.016t} + 20.3" />
             </li>
             <div className="flex flex-col space-y-5">
-              <Ecuabut /> <Modalecu /> <Modalk />
+              <Ecuabut /> <Modalk />
             </div>
           </ol>
         </div>
