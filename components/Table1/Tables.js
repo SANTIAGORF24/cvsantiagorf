@@ -10,10 +10,11 @@ import {
 } from "@nextui-org/react";
 import { Modalone } from "./modalone";
 import { Modatwo } from "./modaltwo";
+
 export function Tables() {
   return (
-    <div className="flex justify-center gap-4">
-      <Card className="max-w-[400px]">
+    <div className="flex flex-col items-center gap-4 md:flex-row md:justify-center">
+      <Card className="w-full max-w-[400px]">
         <CardHeader className="flex gap-3">
           <Image
             alt="nextui logo"
@@ -43,7 +44,7 @@ export function Tables() {
         </CardFooter>
       </Card>
 
-      <Card className="max-w-[400px]">
+      <Card className="w-full max-w-[400px]">
         <CardHeader className="flex gap-3">
           <Image
             alt="nextui logo"
