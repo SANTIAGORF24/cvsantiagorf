@@ -9,6 +9,7 @@ import {
   Button,
   useDisclosure,
 } from "@nextui-org/react";
+import Image from "next/image";
 
 export function GraficaDada() {
   if (typeof window === "undefined") {
@@ -40,7 +41,7 @@ export function GraficaDada() {
                 Imagen gráfica dada por Matlab
               </ModalHeader>
               <ModalBody>
-                <img src="/assets/img/Grafica.jpg" alt="Imagen gráfica" />
+                <Image src="/assets/img/Grafica.jpg" alt="Imagen gráfica" />
               </ModalBody>
               <ModalFooter>
                 <Button
