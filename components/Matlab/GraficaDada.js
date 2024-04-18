@@ -12,19 +12,18 @@ import {
 import Image from "next/image";
 
 export function GraficaDada() {
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
+
   if (typeof window === "undefined") {
     // No estamos en el navegador, retornar algo apropiado para el servidor o renderizado estático
     return null;
   }
-
-  const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
   return (
     <>
       <Button onPress={onOpen} className="bg-orange-500 text-white">
         Imagen gráfica dada por Matlab
       </Button>
-
       <Modal
         backdrop="opaque"
         isOpen={isOpen}
