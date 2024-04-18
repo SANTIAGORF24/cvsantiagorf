@@ -12,16 +12,19 @@ export function Tableg() {
       </h1>
       <div className="w-4/6 text-center mb-8 px-4">
         <p className="text-lg">
-          En una expedición arqueológica, un equipo descubre un antiguo
-          relicario metálico. La temperatura del relicario al ser encontrado es
-          de <span className="font-bold text-orange-500">45.9°C</span>, pero al
-          sacarlo a la superficie, donde la temperatura ambiente es de{" "}
-          <span className="font-bold text-orange-500">20.3°C</span>, comienza un
-          proceso de enfriamiento. Después de{" "}
-          <span className="font-bold text-orange-500">30 minutos</span> de haber
-          sido expuesto al aire fresco, la temperatura del relicario ha
-          descendido a <span className="font-bold text-orange-500">36.1°C</span>{" "}
-          . Suponiendo que el relicario tiene propiedades de enfriamiento
+          En una emocionante aventura culinaria, un equipo de chefs descubre un
+          antiguo recipiente líquido que contiene una mezcla misteriosa de agua
+          y gelatina. La temperatura del líquido al ser encontrado es de
+          <span className="font-bold text-orange-500"> 45.9°C</span>, pero al
+          sacarlo a la superficie de la cocina, donde la temperatura ambiente es
+          de <span className="font-bold text-orange-500">20.3°C</span>, comienza
+          un proceso de enfriamiento.
+          <span className="font-bold text-orange-500">
+            Después de 30 minutos
+          </span>{" "}
+          de haber sido expuesto al aire fresco, la temperatura de la mezcla ha
+          descendido a <span className="font-bold text-orange-500">36.1°C</span>
+          . Suponiendo que el líquido tiene propiedades de enfriamiento
           similares a las de un objeto metálico, podemos modelar su enfriamiento
           utilizando la ley de enfriamiento de Newton.
         </p>
