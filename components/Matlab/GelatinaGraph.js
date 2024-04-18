@@ -51,7 +51,7 @@ const GelatinaGraph = () => {
         />
         <CartesianGrid strokeDasharray="3 3" />
         <Tooltip />
-        <Legend />
+        <Legend verticalAlign="top" align="right" />
         <Line type="monotone" dataKey="temp" stroke="#8884d8" />
         <Line type="monotone" dataKey="tgt" stroke="#82ca9d" />
       </LineChart>
