@@ -1,5 +1,13 @@
 import React from "react";
-import Plot from "react-plotly.js";
+import {
+  LineChart,
+  Line,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+} from "recharts";
 
 const GelatinaGraph = () => {
   // Datos de la tabla
@@ -16,37 +24,37 @@ const GelatinaGraph = () => {
     32.9, 30.3, 27.7, 25.1, 22.5, 19.9, 17.3, 14.7, 12.1,
   ];
 
+  const data = tiempo.map((t, i) => ({
+    time: t,
+    temp: temperatura[i],
+    tgt: rectaTangente[i],
+  }));
+
   return (
     <div>
-      <Plot
-        data={[
-          {
-            x: tiempo,
-            y: temperatura,
-            type: "scatter",
-            mode: "lines+markers",
-            name: "Temperatura",
-            line: { color: "blue" },
-          },
-          {
-            x: tiempo,
-            y: rectaTangente,
-            type: "scatter",
-            mode: "lines",
-            name: "Recta Tangente",
-            line: { color: "red", dash: "dash" },
-          },
-        ]}
-        layout={{
-          width: 800,
-          height: 600,
-          title: "Enfriamiento de la Gelatina",
-          xaxis: { title: "Tiempo (minutos)" },
-          yaxis: { title: "Temperatura (°C)" },
-          legend: { x: 0, y: 1, traceorder: "reversed", font: { size: 16 } },
-          grid: { rows: 1, columns: 1 },
-        }}
-      />
+      <LineChart width={800} height={600} data={data}>
+        <XAxis
+          dataKey="time"
+          label={{
+            value: "Tiempo (minutos)",
+            position: "insideBottom",
+            dy: 20,
+          }}
+        />
+        <YAxis
+          label={{
+            value: "Temperatura (°C)",
+            angle: -90,
+            position: "insideLeft",
+            dy: -10,
+          }}
+        />
+        <CartesianGrid strokeDasharray="3 3" />
+        <Tooltip />
+        <Legend />
+        <Line type="monotone" dataKey="temp" stroke="#8884d8" />
+        <Line type="monotone" dataKey="tgt" stroke="#82ca9d" />
+      </LineChart>
     </div>
   );
 };

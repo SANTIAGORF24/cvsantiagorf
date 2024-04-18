@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import {
   Modal,
@@ -10,6 +11,11 @@ import {
 } from "@nextui-org/react";
 
 export function GraficaDada() {
+  if (typeof window === "undefined") {
+    // No estamos en el navegador, retornar algo apropiado para el servidor o renderizado estático
+    return null;
+  }
+
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
   return (
