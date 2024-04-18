@@ -1,6 +1,6 @@
 import React from "react";
 import CodeMath from "./CodeMath";
-import Graficatit from "./graficatit";
+import Graficatit from "./Graficatit";
 
 export function Mathlan() {
   return (
