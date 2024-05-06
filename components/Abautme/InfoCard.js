@@ -5,11 +5,11 @@ import { Button } from "@nextui-org/react";
 const InfoCard = () => {
   return (
     <div className="flex justify-center">
-      <div className="w-[90%]">
-        <div className="flex justify-between">
-          <div className="flex-1 p-10 border-b border-blue-200">
-            {" "}
-            {/* Añadido */}
+      <div className="w-full md:w-[90%]">
+        {" "}
+        {/* Cambiado */}
+        <div className="flex flex-col md:flex-row justify-between">
+          <div className="w-full md:w-1/3 p-5 md:border-b md:border-r border-blue-200">
             <h2 className="text-2xl font-bold mb-2 py-5">Who am I?</h2>
             <p className="mb-4">
               A Web Designer / Developer Located In Our Lovely Earth
@@ -26,9 +26,7 @@ const InfoCard = () => {
               <FaPrint className="w-4 h-4 mr-1" /> Download My CV
             </Button>
           </div>
-          <div className="border-l border-blue-200 flex-1 p-10 border-b">
-            {" "}
-            {/* Añadido */}
+          <div className="w-full md:w-1/3 p-5 md:border-b border-blue-200">
             <h2 className="text-2xl font-bold mb-2 py-5">Personal Info</h2>
             <p className="mb-2">
               <strong>Birthdate:</strong> 24/12/1002
@@ -76,9 +74,7 @@ const InfoCard = () => {
               </a>
             </div>
           </div>
-          <div className="border-l border-blue-200 flex-1 p-10 border-b">
-            {" "}
-            {/* Añadido */}
+          <div className="w-full md:w-1/3 p-5 md:border-b md:border-l border-blue-200">
             <h2 className="text-2xl font-bold mb-2 py-5">My Experience</h2>
             <div className="mb-2">
               <p>
