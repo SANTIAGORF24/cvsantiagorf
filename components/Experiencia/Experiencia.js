@@ -108,7 +108,7 @@ const Experiencia = () => {
                     the field of computer networks, understanding its
                     fundamental principles and practical applications. In my
                     quest to enrich my skill set, I have dedicated additional
-                    time to exploring emerging technologies. I've dabbled in web
+                    time to exploring emerging technologies. I ve dabbled in web
                     development using modern tools like React.js and have
                     mastered using libraries like Tailwind CSS to create
                     efficient and aesthetically appealing user interfaces.
